@@ -1,0 +1,182 @@
+[
+  {
+    "id": "FI001",
+    "name": "Luxury Beauty Salon",
+    "category": "Salons & Beauty",
+    "price": 650,
+    "description": "Elegant booking-ready site for beauty salons and spas.",
+    "previewUrl": "https://example.github.io/salon-demo/",
+    "thumbnail": "assets/salon.webp",
+    "status": "available",
+    "featured": true,
+    "added": "2026-11-10",
+    "features": [
+      "Service price lists",
+      "Gallery",
+      "WhatsApp booking button",
+      "Contact section"
+    ]
+  },
+  {
+    "id": "FI002",
+    "name": "Sharp Cuts Barbershop",
+    "category": "Barbershops",
+    "price": 550,
+    "description": "Bold, dark-toned site for barbers with a styles gallery.",
+    "previewUrl": "https://example.github.io/barber-demo/",
+    "thumbnail": "assets/barber.webp",
+    "status": "available",
+    "featured": true,
+    "added": "2026-11-08",
+    "features": [
+      "Haircut menu",
+      "Opening hours",
+      "Gallery",
+      "WhatsApp integration"
+    ]
+  },
+  {
+    "id": "FI003",
+    "name": "Fresh Bites Eatery",
+    "category": "Restaurants & Food",
+    "price": 750,
+    "description": "Menu-first website for cafes, takeaways and restaurants.",
+    "previewUrl": "https://example.github.io/eatery-demo/",
+    "thumbnail": "assets/eatery.webp",
+    "status": "available",
+    "featured": true,
+    "added": "2026-11-06",
+    "features": [
+      "Digital menu",
+      "Specials section",
+      "Map and hours",
+      "WhatsApp ordering link"
+    ]
+  },
+  {
+    "id": "FI004",
+    "name": "Street Style Boutique",
+    "category": "Clothing & Fashion",
+    "price": 800,
+    "description": "Lookbook-style site for clothing and fashion brands.",
+    "previewUrl": "https://example.github.io/boutique-demo/",
+    "thumbnail": "assets/boutique.webp",
+    "status": "available",
+    "featured": false,
+    "added": "2026-10-28",
+    "features": [
+      "Collections grid",
+      "Size guide",
+      "Instagram section",
+      "WhatsApp enquiries"
+    ]
+  },
+  {
+    "id": "FI005",
+    "name": "Sparkle Clean Services",
+    "category": "Cleaning Services",
+    "price": 600,
+    "description": "Trust-building site for home and office cleaning companies.",
+    "previewUrl": "https://example.github.io/cleaning-demo/",
+    "thumbnail": "assets/cleaning.webp",
+    "status": "available",
+    "featured": false,
+    "added": "2026-10-20",
+    "features": [
+      "Service packages",
+      "Quote request via WhatsApp",
+      "Testimonials",
+      "Service areas"
+    ]
+  },
+  {
+    "id": "FI006",
+    "name": "Lens & Light Studio",
+    "category": "Photography",
+    "price": 700,
+    "description": "Image-led portfolio for photographers with package pricing.",
+    "previewUrl": "https://example.github.io/photo-demo/",
+    "thumbnail": "assets/photo.webp",
+    "status": "available",
+    "featured": true,
+    "added": "2026-10-15",
+    "features": [
+      "Full-screen gallery",
+      "Packages",
+      "About section",
+      "Contact section"
+    ]
+  },
+  {
+    "id": "FI007",
+    "name": "Summit Corporate",
+    "category": "Business & Corporate",
+    "price": 950,
+    "description": "Professional multi-section site for consultancies and firms.",
+    "previewUrl": "https://example.github.io/corporate-demo/",
+    "thumbnail": "assets/corporate.webp",
+    "status": "available",
+    "featured": false,
+    "added": "2026-10-05",
+    "features": [
+      "Services pages",
+      "Team section",
+      "Client logos",
+      "Contact form link"
+    ]
+  },
+  {
+    "id": "FI008",
+    "name": "Folio Personal Portfolio",
+    "category": "Portfolio Websites",
+    "price": 500,
+    "description": "Clean personal portfolio for freelancers and creatives.",
+    "previewUrl": "https://example.github.io/portfolio-demo/",
+    "thumbnail": "assets/portfolio.webp",
+    "status": "sold",
+    "featured": false,
+    "added": "2026-09-25",
+    "features": [
+      "Project showcase",
+      "CV section",
+      "Social links",
+      "Contact section"
+    ]
+  },
+  {
+    "id": "FI009",
+    "name": "Chat Shop Catalogue",
+    "category": "WhatsApp Shops",
+    "price": 850,
+    "description": "Product catalogue where every item opens a WhatsApp order.",
+    "previewUrl": "https://example.github.io/wa-shop-demo/",
+    "thumbnail": "assets/wa-shop.webp",
+    "status": "available",
+    "featured": false,
+    "added": "2026-09-15",
+    "features": [
+      "Product grid",
+      "Category filters",
+      "WhatsApp order buttons",
+      "Mobile-first layout"
+    ]
+  },
+  {
+    "id": "FI010",
+    "name": "Launch Page Pro",
+    "category": "Landing Pages",
+    "price": 400,
+    "description": "Single-page launch site to promote one offer or event.",
+    "previewUrl": "https://example.github.io/landing-demo/",
+    "thumbnail": "assets/landing.webp",
+    "status": "coming-soon",
+    "featured": false,
+    "added": "2026-09-01",
+    "features": [
+      "Hero offer",
+      "Benefits section",
+      "Countdown-ready",
+      "WhatsApp call to action"
+    ]
+  }
+]

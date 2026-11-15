@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-ZA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview | Frame It Agency</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css"></head>
+<body class="pv">
+<div class="pvbar"><a class="btn ghost sm" href="index.html#browse" id="back">&larr; Back to marketplace</a><strong id="pname">Loading…</strong><span id="pprice"></span>
+<a class="btn ghost sm" id="open" target="_blank" rel="noopener" href="#">Open demo alone</a><a class="btn sm" id="buy" target="_blank" rel="noopener" href="#">Buy This Website</a></div>
+<iframe id="frame" title="Website demo" referrerpolicy="no-referrer"></iframe>
+<script src="site.config.js"></script><script src="common.js"></script>
+<script>
+const F = window.FI, id = new URLSearchParams(location.search).get("id");
+F.loadProducts().then(ps => {
+  const p = ps.find(x => x.id === id);
+  if (!p) { document.getElementById("pname").textContent = "Website not found"; return; }
+  document.title = p.name + " preview | Frame It Agency";
+  pname.textContent = p.name; pprice.textContent = F.money(p.price);
+  frame.src = p.previewUrl; open.href = p.previewUrl;
+  if (p.status === "available") buy.href = F.buyLink(p);
+  else { buy.textContent = F.STATUS[p.status]; buy.classList.add("dis"); buy.removeAttribute("href"); buy.removeAttribute("target"); }
+}).catch(() => pname.textContent = "Could not load products");
+</script></body></html>
