@@ -4,7 +4,7 @@ window.SITE = {
   tagline: "Your business. Your website. Your online presence.",
   whatsappNumber: "27817216672",     // international format, digits only
   email: "frameitagency@proton.me",
-  sheetCsvUrl: "",                      // paste your Google Sheet "Publish to web" CSV link here (see README). Empty = use products.json
+  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQfJUtaQPtj0J9EP-F174A9jpcdSHp8qS1CzwcurZKf3XzvV_J9Slsb8yKzQTngHRkTrw7qI81vcakg/pub?gid=1624279334&single=true&output=csv",                      // paste your Google Sheet "Publish to web" CSV link here (see README). Empty = use products.json
   location: "Durban, South Africa",
   social: { instagram: "", facebook: "", tiktok: "", linkedin: "" }, // full URLs; empty ones are hidden
   categories: ["Salons & Beauty","Barbershops","Restaurants & Food","Clothing & Fashion","Cleaning Services","Photography","Business & Corporate","Portfolio Websites","WhatsApp Shops","Landing Pages"],
