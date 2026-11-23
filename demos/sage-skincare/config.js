@@ -1,0 +1,2 @@
+/* Replace these demo settings before using this template for a real store. */
+window.STORE_CONFIG={storeName:"Sage",currency:"ZAR",locale:"en-ZA",whatsappNumber:"27XXXXXXXXX",googleSheetCsvUrl:"",paymentUrl:"",contactEmail:"hello@example.com"};
