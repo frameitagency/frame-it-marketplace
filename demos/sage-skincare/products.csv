@@ -1,0 +1,5 @@
+id,name,category,price,description,image,stock
+sage-cream,Sage Daily Cream,Skincare,189,Daily moisturising care with a soft lightweight feel.,https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85,12
+sage-serum,Sage Botanical Serum,Skincare,229,A simple addition to your evening skincare ritual.,https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=85,8
+sage-cleanser,Sage Gentle Cleanser,Skincare,159,A gentle everyday cleanser for a fresh-feeling routine.,https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=85,15
+sage-body,Sage Body Lotion,Hair & Body,199,Comforting daily moisture for head-to-toe care.,https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85,10
