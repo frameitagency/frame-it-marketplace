@@ -1,0 +1,1 @@
+window.STORE_CONFIG={storeName:"Clear Glow",currency:"ZAR",locale:"en-ZA",whatsappNumber:"27616100885",googleSheetCsvUrl:"",paymentUrl:"",contactEmail:""};
