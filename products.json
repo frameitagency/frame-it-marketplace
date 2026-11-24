@@ -178,5 +178,25 @@
       "Countdown-ready",
       "WhatsApp call to action"
     ]
+  },
+  {
+    "id": "FI011",
+    "name": "Hair by Pearl",
+    "category": "Salons & Beauty",
+    "price": 650,
+    "description": "A refined, mobile-friendly hair boutique website with a wig, hairpiece and hair-care catalogue, product search, enquiry bag and WhatsApp ordering.",
+    "previewUrl": "https://frameitagency.github.io/frame-it-marketplace/demos/hair-by-pearl/",
+    "thumbnail": "assets/hair-by-pearl.svg",
+    "status": "available",
+    "featured": true,
+    "added": "2026-11-24",
+    "features": [
+      "Wigs and hairpieces catalogue",
+      "Hair-care collection",
+      "Product category filters and search",
+      "Enquiry bag with quantity controls",
+      "WhatsApp enquiry checkout",
+      "Google Sheets CSV product feed"
+    ]
   }
 ]
