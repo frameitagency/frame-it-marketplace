@@ -22,8 +22,17 @@
       .filter(o => o.id && o.name).map(o => ({ id: o.id, name: o.name, category: o.category, price: Number(String(o.price).replace(/[^\d.]/g, "")) || 0,
         description: o.description, previewUrl: o.previewurl, thumbnail: o.thumbnail, status: (o.status || "available").toLowerCase(),
         featured: /^(true|yes|1)$/i.test(o.featured), added: day(o.added), features: (o.features || "").split("|").map(s => s.trim()).filter(Boolean) })); };
-  const loadProducts = () => (S.sheetCsvUrl ? fetch(S.sheetCsvUrl).then(r => { if (!r.ok) throw 0; return r.text(); }).then(fromSheet).then(p => { if (!p.length) throw 0; return p; }) : Promise.reject())
-    .catch(() => fetch("products.json").then(r => { if (!r.ok) throw 0; return r.json(); }));
+  const loadProducts = () => fetch("products.json").then(r => { if (!r.ok) throw new Error("Catalogue unavailable"); return r.json(); })
+    .then(local => {
+      if (!S.sheetCsvUrl) return local;
+      return fetch(S.sheetCsvUrl).then(r => { if (!r.ok) throw new Error("Sheet feed unavailable"); return r.text(); })
+        .then(fromSheet).then(sheet => {
+          if (!sheet.length) return local;
+          const merged = new Map(local.map(p => [p.id, p]));
+          sheet.forEach(p => merged.set(p.id, { ...merged.get(p.id), ...p }));
+          return [...merged.values()];
+        }).catch(() => local);
+    });
   const STATUS = { available: "", sold: "Sold", "coming-soon": "Coming soon" };
   window.FI = { fromSheet, money, wa, buyLink, esc, previewPage, loadProducts, STATUS, generalLink: () => wa(S.generalMessage) };
   if (typeof module !== "undefined") module.exports = window.FI;
