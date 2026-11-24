@@ -41,7 +41,8 @@
     </article>`).join(""):'<p class="no-results">No styles found. Try another search.</p>';
     $$("[data-add]",grid).forEach(btn=>btn.addEventListener("click",()=>add(btn.dataset.add)));
   }
-  function add(id){bag.set(id,(bag.get(id)||0)+1);renderBag();openBag();}
+  // Adding an item updates the bag and count without opening the cart drawer.
+  function add(id){bag.set(id,(bag.get(id)||0)+1);renderBag();}
   function change(id,delta){const next=(bag.get(id)||0)+delta;if(next<=0)bag.delete(id);else bag.set(id,next);renderBag();}
   function renderBag(){
     const total=[...bag.values()].reduce((a,b)=>a+b,0);$("#cartCount").textContent=total;
