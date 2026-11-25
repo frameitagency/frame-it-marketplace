@@ -1,0 +1,11 @@
+id,name,category,price,description,image,stock
+EVO-001,iPhone 15 Pro Max 256GB,iPhones,19499,"Natural Titanium • 94% Battery Health • Factory Unlocked • Includes 12-Month Warranty & Fast Charger",https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=900&q=85,4
+EVO-002,iPhone 15 Pro 128GB,iPhones,16999,"Blue Titanium • 96% Battery Health • Mint Grade A+ Condition • Face ID & True Tone Verified",https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&w=900&q=85,6
+EVO-003,iPhone 14 Pro 256GB,iPhones,13999,"Deep Purple • 91% Battery Health • 120Hz ProMotion Display • Original Box & Cable",https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=900&q=85,5
+EVO-004,iPhone 13 128GB,iPhones,8999,"Midnight • 90% Battery Health • Clean Housing • 45-Point Diagnostic Certified",https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&w=900&q=85,8
+EVO-005,Apple Watch Ultra 2,Smartwatches,12499,"49mm Titanium Case • Orange Alpine Loop • GPS + Cellular • 98% Battery Health",https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=900&q=85,3
+EVO-006,AirPods Max,Audio,7999,"Space Grey • Active Noise Cancellation • Spatial Audio • Includes Smart Case",https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?auto=format&fit=crop&w=900&q=85,4
+EVO-007,AirPods Pro (2nd Gen),Audio,3499,"USB-C MagSafe Charging Case • Adaptive Transparency • Sanitized & Tested",https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=900&q=85,10
+EVO-008,MacBook Air M2 13-inch,Gadgets,15999,"Midnight • 8GB Unified RAM • 256GB SSD • Low Cycle Count • Includes MagSafe 3 Charger",https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85,2
+EVO-009,iPad Pro 11-inch M2,Gadgets,13499,"Space Grey • 128GB Wi-Fi • Liquid Retina Display • Ideal for Creators & Students",https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=85,3
+EVO-010,20W USB-C Fast Charger & Braided Cable,Accessories,499,"Brand New OEM-Spec Fast Charging Bundle for iPhone 15 / 16 & iPad Pro",https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=85,25

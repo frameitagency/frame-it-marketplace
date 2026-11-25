@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVO-LUTION | Certified Pre-Owned iPhones &amp; Tech Store South Africa</title>
+  <meta name="description" content="Shop certified pre-owned iPhones, Apple Watches, AirPods, MacBooks and tech essentials in South Africa. 45-point tested, battery health guaranteed, and fast WhatsApp ordering." />
+  <meta property="og:title" content="EVO-LUTION — Certified Used iPhones &amp; Tech Store" />
+  <meta property="og:description" content="Premium pre-owned iPhones and tech gadgets in ZAR with instant WhatsApp ordering and nationwide courier delivery." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Top Utility Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span class="top-bar-left">NATIONWIDE INSURED COURIER</span>
+      <span class="top-bar-center">Certified Grade A+ Pre-Owned iPhones &amp; Gadgets • 12-Month Warranty</span>
+      <div class="top-bar-right">
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero & Floating Navigation Wrapper -->
+  <header class="hero-wrapper" id="home">
+    <div class="container nav-container">
+      <nav class="navbar" aria-label="Primary Navigation">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#catalogue" data-filter-link="iPhones">IPHONES</a></li>
+          <li><a href="#catalogue" data-filter-link="Smartwatches">WATCHES</a></li>
+          <li><a href="#catalogue" data-filter-link="Audio">AUDIO</a></li>
+          <li><a href="#catalogue" data-filter-link="Gadgets">GADGETS</a></li>
+          <li><a href="#catalogue" data-filter-link="Accessories">ACCESSORIES</a></li>
+        </ul>
+
+        <a href="#home" class="brand-logo">EVO-LUTION</a>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="searchToggleBtn" aria-label="Search products" title="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <a href="#contact" class="icon-btn hide-mobile" aria-label="Store info" title="Contact &amp; Hours">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+          <button class="icon-btn cart-trigger" id="cartOpenBtn" aria-label="Open shopping bag">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Expandable Search Bar -->
+      <div class="search-drawer" id="searchDrawer" hidden>
+        <input type="search" id="searchInput" placeholder="Search iPhone 15 Pro, AirPods, Apple Watch..." aria-label="Search products" />
+        <button type="button" id="searchClearBtn" class="search-clear">Clear</button>
+      </div>
+    </div>
+
+    <!-- Hero Showcase Content -->
+    <div class="container hero-content">
+      <div class="hero-left">
+        <span class="hero-kicker">CERTIFIED PRE-OWNED TECH</span>
+        <h1 class="hero-title">NEW<br />COLLECTION</h1>
+        <p class="hero-subtitle">Grade A+ used iPhones &amp; Apple ecosystem gadgets, 45-point diagnostic verified and priced in ZAR.</p>
+        <div class="hero-cta-group">
+          <a href="#catalogue" class="btn-dark">Shop Now <span aria-hidden="true">→</span></a>
+          <a href="https://wa.me/27616100885?text=Hi%20evo-lution!%20I'd%20like%20to%20enquire%20about%20available%20iPhones." target="_blank" rel="noopener noreferrer" class="btn-ghost-light">WhatsApp Store</a>
+        </div>
+      </div>
+
+      <div class="hero-center-visual">
+        <img
+          src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1000&q=85"
+          alt="Certified Pre-Owned iPhone Pro Titanium Lineup"
+          class="hero-device-img"
+        />
+      </div>
+
+      <div class="hero-right">
+        <span class="hero-stat">90%+</span>
+        <p class="hero-stat-title">BATTERY HEALTH</p>
+        <p class="hero-stat-sub">BUILT FOR WHAT'S NEXT</p>
+      </div>
+    </div>
+
+    <!-- Curved SVG Bottom Divider -->
+    <div class="hero-curve" aria-hidden="true">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+        <path d="M0,20 Q720,130 1440,20 L1440,110 L0,110 Z" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <!-- Featured / Ready-To-Ship Section -->
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">READY-TO-SHIP</h2>
+          <a href="#catalogue" class="see-more-link">See all <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="product-grid" id="featuredGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Asymmetric Split Banner (Matching Reference Layout) -->
+    <section class="section editorial-section" id="about">
+      <div class="container editorial-grid">
+        <div class="editorial-large-card">
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=85"
+            alt="MacBook and Apple Ecosystem Devices at evo-lution"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="editorial-right-col">
+          <div class="editorial-header-row">
+            <h2 class="section-title">SMARTER<br />UPGRADES</h2>
+            <a href="#catalogue" class="see-more-link">Explore <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="editorial-bottom-split">
+            <div class="editorial-small-card">
+              <img
+                src="https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=700&q=85"
+                alt="Pre-Owned iPhone Pro Models"
+                loading="lazy"
+              />
+            </div>
+            <div class="editorial-copy">
+              <p>
+                Premium devices for a smarter tomorrow. At <strong>evo-lution</strong>, every pre-owned iPhone and tech gadget undergoes a strict 45-point hardware, Face ID, True Tone, and battery health inspection before hitting our shelves.
+              </p>
+              <ul class="trust-list">
+                <li>✓ 100% Network Unlocked &amp; Clean IMEI</li>
+                <li>✓ 12-Month evo-lution Hardware Warranty</li>
+                <li>✓ Same-Day WhatsApp Order Confirmation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Interactive Catalogue Section -->
+    <section class="section catalogue-section" id="catalogue">
+      <div class="container">
+        <div class="section-header catalogue-header">
+          <div>
+            <h2 class="section-title">SMARTPHONES &amp; TECH FOR YOU</h2>
+            <p class="section-subtitle" id="catalogueCountText">Showing all certified devices in ZAR</p>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Product Categories" id="categoryFilterBar">
+            <button class="filter-pill active" data-category="All">All</button>
+            <button class="filter-pill" data-category="iPhones">iPhones</button>
+            <button class="filter-pill" data-category="Smartwatches">Smartwatches</button>
+            <button class="filter-pill" data-category="Audio">Audio</button>
+            <button class="filter-pill" data-category="Gadgets">Gadgets</button>
+            <button class="filter-pill" data-category="Accessories">Accessories</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="catalogueGrid">
+          <!-- Populated dynamically from Google Sheets CSV or products.csv -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Store Info Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <span class="eyebrow">DIRECT STORE SUPPORT</span>
+          <h2>Visit or Message evo-lution</h2>
+          <p>Need live battery health photos, trade-in quotes, or courier estimates anywhere in South Africa? Chat directly with our tech specialists on WhatsApp.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <strong>WhatsApp &amp; Calls</strong>
+              <a href="https://wa.me/27616100885" target="_blank" rel="noopener noreferrer">061 610 0885</a>
+            </div>
+            <div class="contact-item">
+              <strong>Trading Hours</strong>
+              <span>Mon – Sat: 09:00 – 18:00 | Sun: 10:00 – 15:00</span>
+            </div>
+            <div class="contact-item">
+              <strong>Delivery &amp; Collection</strong>
+              <span>Insured Door-to-Door Courier Nationwide (1–3 Business Days)</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/27616100885?text=Hi%20evo-lution!%20I%20have%20a%20question%20about%20a%20device." target="_blank" rel="noopener noreferrer" class="btn-dark">
+            Chat on WhatsApp →
+          </a>
+        </div>
+
+        <div class="quick-enquiry-card">
+          <h3>Quick Device Enquiry / Trade-In</h3>
+          <p>Send your request directly to our WhatsApp desk.</p>
+          <form id="enquiryForm" class="enquiry-form">
+            <label>
+              <span>Your Name</span>
+              <input type="text" id="enqName" required placeholder="e.g. Thabo Mokoena" />
+            </label>
+            <label>
+              <span>Device Interested In / Trade-In Model</span>
+              <input type="text" id="enqDevice" required placeholder="e.g. iPhone 15 Pro 128GB" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea id="enqMessage" rows="3" placeholder="Ask about colour options, battery %, or delivery..."></textarea>
+            </label>
+            <button type="submit" class="btn-dark full-width">Send Enquiry via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">EVO-LUTION</a>
+        <p>Certified pre-owned iPhones, Apple Watches, audio gear, and tech essentials across South Africa.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#catalogue" data-filter-link="iPhones">Used iPhones</a></li>
+          <li><a href="#catalogue" data-filter-link="Smartwatches">Smartwatches</a></li>
+          <li><a href="#catalogue" data-filter-link="Audio">AirPods &amp; Audio</a></li>
+          <li><a href="#catalogue" data-filter-link="Gadgets">MacBooks &amp; iPads</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="#about">45-Point Quality Check</a></li>
+          <li><a href="#contact">Trade-In &amp; Upgrades</a></li>
+          <li><a href="https://wa.me/27616100885" target="_blank" rel="noopener noreferrer">WhatsApp: 061 610 0885</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> evo-lution Tech Store. All prices in South African Rand (ZAR).</p>
+      <p class="template-credit">Built by Frame It Agency</p>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Shopping Cart & Checkout Drawer -->
+  <div class="drawer-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag" hidden>
+    <div class="cart-header">
+      <h3>Your Shopping Bag</h3>
+      <button class="close-btn" id="cartCloseBtn" aria-label="Close bag">&times;</button>
+    </div>
+
+    <div class="cart-body" id="cartItemsContainer">
+      <!-- Cart items rendered here -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="subtotal-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">R 0</strong>
+      </div>
+      <p class="shipping-note">Courier fee confirmed on WhatsApp based on your delivery address.</p>
+
+      <form id="checkoutForm" class="checkout-form">
+        <h4>Customer Details for Order Summary</h4>
+        <input type="text" id="custName" required placeholder="Full Name *" aria-label="Full Name" />
+        <input type="tel" id="custPhone" required placeholder="Contact Number (e.g. 082 123 4567) *" aria-label="Contact Number" />
+        <input type="text" id="custCity" placeholder="Delivery City / Suburb (Optional)" aria-label="Delivery City" />
+
+        <button type="submit" class="btn-whatsapp full-width">
+          Send Order Summary to WhatsApp
+        </button>
+
+        <div id="paymentProviderBox" class="payment-provider-box">
+          <!-- Configurable payment option rendered by app.js -->
+        </div>
+      </form>
+      <p class="checkout-disclaimer">
+        Note: Submitting sends an order enquiry summary to evo-lution on WhatsApp. Stock reservation and payment are finalized directly with our team.
+      </p>
+    </div>
+  </aside>
+
+  <div class="cart-toast" id="cartToast" role="status" aria-live="polite" hidden>
+    Added to bag
+  </div>
+
+  <!-- Product Quick-View Modal -->
+  <div class="modal-backdrop" id="productModalBackdrop" hidden>
+    <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-btn modal-close" id="modalCloseBtn" aria-label="Close product details">&times;</button>
+      <div class="modal-grid" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
