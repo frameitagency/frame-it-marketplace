@@ -37,6 +37,51 @@
   function setCat(c){ state.cat = c; render(); }
 
   function init(){
+    const catTrack = $("#cats");
+    const catPrev = document.createElement("button");
+    const catNext = document.createElement("button");
+    [catPrev, catNext].forEach((button, i) => {
+      button.type = "button";
+      button.className = "cat-arrow";
+      button.setAttribute("aria-label", i === 0 ? "Previous categories" : "Next categories");
+      button.textContent = i === 0 ? "←" : "→";
+    });
+    const catCarousel = document.createElement("div");
+    catCarousel.className = "cat-carousel";
+    catTrack.classList.add("cat-track");
+    catTrack.setAttribute("aria-label", "Website design categories");
+    catTrack.setAttribute("tabindex", "0");
+    catTrack.parentNode.insertBefore(catCarousel, catTrack);
+    catCarousel.append(catPrev, catTrack, catNext);
+    const catStyle = document.createElement("style");
+    catStyle.textContent = `
+      #categories .cat-carousel{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:1rem}
+      #categories .cats.cat-track{display:flex;gap:1rem;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:.25rem 0 1rem}
+      #categories .cat-track::-webkit-scrollbar{display:none}
+      #categories .cattile{flex:0 0 clamp(260px,32vw,360px);min-height:190px;align-content:space-between;flex-wrap:wrap;gap:.6rem 1rem;padding:1.35rem;border:1px solid #333;border-radius:14px;scroll-snap-align:start}
+      #categories .cattile:hover{padding-left:1.35rem;transform:translateY(-3px);border-color:var(--c)}
+      #categories .cattile strong{font-size:1.7rem}
+      #categories .cat-arrow{width:44px;height:44px;border:1px solid #444;border-radius:50%;background:#111;color:#fff;font:500 1.2rem "Instrument Sans",sans-serif;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+      #categories .cat-arrow:hover:not(:disabled){background:var(--c);border-color:var(--c);color:#000}
+      #categories .cat-arrow:disabled{opacity:.35;cursor:default}
+      @media(max-width:820px){#categories .cat-carousel{gap:.6rem}#categories .cat-arrow{width:38px;height:38px}#categories .cattile{flex-basis:min(76vw,340px);min-height:170px}}
+    `;
+    document.head.append(catStyle);
+    const updateCatArrows = () => {
+      const max = catTrack.scrollWidth - catTrack.clientWidth;
+      catPrev.disabled = catTrack.scrollLeft <= 2;
+      catNext.disabled = max <= 2 || catTrack.scrollLeft >= max - 2;
+    };
+    const moveCats = direction => {
+      const tile = catTrack.querySelector(".cattile");
+      if (tile) catTrack.scrollBy({ left: direction * (tile.getBoundingClientRect().width + 16), behavior: "smooth" });
+    };
+    catPrev.onclick = () => moveCats(-1);
+    catNext.onclick = () => moveCats(1);
+    catTrack.addEventListener("scroll", updateCatArrows, { passive: true });
+    window.addEventListener("resize", updateCatArrows);
+    const catCarouselObserver = new ResizeObserver(updateCatArrows);
+    catCarouselObserver.observe(catTrack);
     document.title = S.name + " | Ready-made websites for small businesses";
     document.querySelectorAll("[data-wa]").forEach(a => { a.href = F.generalLink(); a.target = "_blank"; a.rel = "noopener"; });
     $("#year").textContent = new Date().getFullYear();
