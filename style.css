@@ -247,3 +247,9 @@ footer strong{color:var(--c)}
   .steps li{padding:1rem}
 }
 @media(prefers-reduced-motion:reduce){.card,.cat-arrow{transition:none!important}}
+
+/* Gumroad marketplace links */
+nav a.gumroad-nav{color:#a7430d;font-weight:600}
+nav a.gumroad-nav:hover{color:#7b3009}
+.gumroad-btn,.gumroad-btn:hover{background:#f26b1d;border-color:#f26b1d;color:#211912}
+.gumroad-btn:hover{background:#211912;border-color:#211912;color:#fff}
